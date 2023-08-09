@@ -10,7 +10,7 @@
     <%# <%= f.association :user %>
     <%= f.input :allow_comments %>
     <%= f.input :show_likes_count %>
-    <%= f.input :images, multiple: true %>
+    <%= f.input :images, input_html: { multiple: true } %>
   </div>
 
   <div class="form-actions">

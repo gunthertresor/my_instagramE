@@ -2,13 +2,13 @@
 
   <div class="card" style="width: 18rem;">
     <div class="card-header bg-white">
-    <%= image_tag post.user.profile_pic, class: 'img-thumbnail rounded-circle', style: 'width: 10%' %>
+    <%# <%= image_tag post.user.profile_pic, class: 'img-thumbnail rounded-circle', style: 'width: 10%' %>
       <%= post.user.username %>
     </div>
 
-    <%# <%= image_tag post.images.last, class: "card-img-top" %>
+    <%= image_tag post.images.last, class: "card-img-top" %>
     <div class="card-body">
-      <p class="card-text"><%= post.caption%></p>
+      <p class="card-text"><%= post.caption %></p>
     </div>
     <div class="card-footer">
       Featured
